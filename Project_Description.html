@@ -39,6 +39,7 @@
            data-bs-target="#tp-collapse" aria-expanded="false" role="button">
           Team Profile
         </a>
+       
         <div class="collapse mx-3" id="tp-collapse">
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
             <li><a href="#chris" class="link-dark rounded">Chris</a></li>
@@ -95,8 +96,15 @@
       <li class="mb-1">
         <a class="btn align-items-center rounded collapsed" href="Group_Reflection.html" data-bs-toggle="collapse"
            data-bs-target="" aria-expanded="false" role="button">
-          Group Reflection
-        </a>
+          Group Reflection</a>
+          
+      </li>
+
+      <li class="mb-1">
+        <a class="btn align-items-center rounded collapsed" href="Artefacts.html" data-bs-toggle="collapse"
+           data-bs-target="" aria-expanded="false" role="button">
+          Artefacts</a>
+          
       </li>
     </ul>
 
@@ -189,7 +197,164 @@
         <img src="assets/basicflowchart.png" alt="first flow chart from A2" width="460" height="460">
   
       <h2 id="roles">Roles</h2>
-      <h2 id="scope">Scope & Limits</h2>
+      <br>
+      <br>
+      <br>
+
+      <h2 id="scope">Scope & Limits</h2><br><br>
+      <h3>Phase 1 Scope – Assignment 3</h3><br>
+      <h4><u>Summary for the Purposes of Defining Scope</u></h4>
+      <br>
+      <p>The application ‘Drive Aware’ that was chosen for Assignment 2 submission - <a href="https://s3903477.github.io/ITT-Assignment-2/Project_Idea.html"></a> has the following functionalities.<br>
+      <br>There are 4 types of monitoring suggested in the application.  Some can be tracked using the iPhone and some by the Apple Watch*. Accordingly, both are recommended assessment of fatigue.<br><br></p>
+      <h4>Monitoring methods of driver</h4>
+      <ul>
+        <li>Monitor 1 – Speed (iPhone)</li>
+        <li>Monitor 2 – Heart rate (Apple Watch)</li>
+        <li>Monitor 3 – Movement/arm placement (Apple Watch)</li>
+        <li>Monitor 4 – Visual/Facial cues (iPhone)</li>
+      </ul>
+      <p style="font-size: smaller;"><em>*As technology improves and more sensors are included in iPhones and Apple watch devices, the monitoring level can increase.
+          See future development for more information.</em></p>
+       
+      <p>The alerts for each type of monitored outcome will differ with individual alert text and pathways.  These are explained below.</p>
+       
+      <h4>Alert pathway</h4>
+      <ul>
+        <li>Alert to notify driver that there is concerning behaviour that may be impacting their ability to drive safely.  Movement change, facial cue change, known fatigue signs, etc.
+          Driver to use Siri voice command to deactivate to limit distraction.</li>
+        <li>The scope of this project limits alerts for our Prototype to:  Fatigue signs from long driving period to trigger a rest, danger signs that may indicate a collision and a general
+          fatigue alert that advises the driver that they may no longer be focused.</li>
+        <li>Each alert would expect a voice command to deactivate to prevent the need to touch the phone.  If this alert is ignored, the emergency pathway is activated.</li>
+        <li>Emergency pathway will notify emergency contacts of the GPS location with a message via SMS.   Emergency services will also be called.  (This pathway is already 
+          in place with Apple Health SOS pathway and not redeveloped for this application)</li>
+      </ul>
+      <br>
+             
+      <h4>Rest Management</h4> 
+      <ul>
+        <li>Timer start – Vehicle in motion </li>
+        <li>Monitoring of facial cues and movement, etc. will aid in the assessment that the driver may be fatigued.  Machine learning algorithms will improve the assessment the more
+           the application is used.  Drivers can have individual driving limitations and therefore setting a specific time will not be as accurate.</li>
+        <li>When driver has pulled over and starts the rest period, the 15 minute timer for rest period will start  (profile settings can increase this time to personalise – not in scope 
+          for prototype but will be considered in future development)</li>
+        <li>Response/reaction time test will commence after the rest timer is complete </li>
+        <li>Should the driver not be able to perform the test accurately or within the allotted time then rest period will recommence</li>
+        <li>On success of test, driver can continue the drive</li>
+      </ul>
+      <br>      
+      <h4><u>Scope</u></h4>
+      
+      <p>The scope for Assignment 3 will provide a more in-depth plan on how to bring the application to life as well as a prototype for demonstration. 
+     <br><br>
+      The decision to use a prototype as opposed to programming an Apple application was made due to time constraints and level of expertise in the Apple development area. 
+      <br> <br> 
+      A prototype will allow us to display our vision to prospective investors and be used for basic testing.</p>
+      <br>
+      <h4>Prototype to showcase the following: </h4>
+      <br>
+      <h5>New User Registration</h5>
+      <ul>
+        <li>Register email and password of new user</li>
+        <li>Terms & Conditions</li>
+        <li>Permission to access Apple Health data  (heart rate, emergency contacts, etc.)</li>
+        <li>Calibration required for app to collect baseline for facial cues</li>
+      </ul>
+    <br>
+<h5>Current User</h5>  
+<ul>
+  <li>Login using current email and password  </li>
+  <li>User to click on Start button when they commence their journey </li>
+  </ul>
+  <br>
+<h5>Reaction test after rest</h5> 
+<ul>
+  <li>Data collected and measured to test for signs of fatigue</li>
+  <li>User alerted to start rest time</li>
+  <li>Rest timer set to 15 minutes</li>
+  <li>On conclusion of 15 minutes, user is requested to test their reaction/response time with a game</li>
+  <li>If user succeeds – journey can continue</li>
+  <li>If user does not succeed, rest timer is reset to 15 minutes again</li>
+</ul>
+<br>
+<h5>Collision alert</h5>   
+<ul>
+  <li>User is already logged in and journey has commenced</li>  
+  <li>Alert triggered in the event of rapid deceleration</li>  
+  <li>User alerted</li>  
+  <li>User to deactivate alert with voice command</li>
+  <li>If alert is not deactivated, notifications sent to Emergency contacts</li>
+</ul> 
+<br>
+
+<h5>Fatigue cues alert</h5> 
+<ul>
+  <li>User is already logged in and journey has commenced</li>  
+  <li>Data collected and measured to test for signs of fatigue (heart rate, movement, facial cues, etc.)</li>  
+  <li>User alerted</li>   
+  <li>User to deactivate alert with voice command</li>  
+  <li>If alert is not deactivated, second alert is sent </li> 
+  <li>If second alert is not deactivated then notifications sent to Emergency contacts </li> 
+</ul> 
+<br>  
+<p>In order for the Prototype to flow in the intended way for demonstration, we have split the prototypes into 3 links.  More information can be found in the artefacts section. 
+<br>
+The scope of the project also extends to basic testing (see testing)</p>
+<br>
+ <br>
+<h3>Phase 2 – Future Developments (Out of scope for Assignment 3)</h3>
+<br>
+<ul>
+<li>Prototype development is used to show the key functionalities and is not extended to all and every area we would develop</li>
+<ul>
+  <li>Examples of functions not displayed in Prototype – bottom menu icons</li>
+  <ul>
+    <li>Profile menu – update user details, change password, calibration, logout</li>
+    <li>Navigation – open in maps </li>
+    <li>Activity – daily, weekly, monthly, etc. reporting on history of data collected from heart rate, gyroscope, accelerometer, response time tests, etc. </li>
+    <li>Settings - notification settings</li>
+  </ul>
+</ul>
+<ul>
+  <li>Headband using electroencephalogram (EEG) monitoring of Beta and Alpha waves</li>
+  <ul>
+    <li>The technology is available now but for the scope of the assignment we had to draw a line in the sand.  We have reached out to We have reached out to the manufacturers of two devices:</li>
+    <ul>
+      <li>BrainBit ('Wearable EEG headband" BrainBit', 2021)</li>
+      <li>Neuro ('SenzeBand: The Brainwave Sensor for Everyone', 2021) and were waiting on some further information.  Due to the time constraints, we felt this is a path for future research.</li>
+    </ul>
+   </ul>
+</ul>
+<ul>
+  <li>Thermal Imaging</li>
+  <ul>
+    <li>Technology that could be explored and provide benefit to the Project idea but not in scope due to time constraints</li>
+  </ul>
+</ul>
+<ul>
+   <li>Integration with vehicle's in-built digital screen/navigation systems</li>
+   <li>Android Application and Non-Apple Smart Watch expansion</li>
+   <li>Expansion of reporting based on the data collected </li>
+   <ul>
+    <li>Initial reporting is limited to activity and rest game response time</li>
+    <li>Further statistical reporting can be developed based on the collection of data</li>
+   </ul>
+   <li>Rest game improvements </li>
+   <ul>
+    <li>Initial game is very basic and only has left and right test to show functionality</li>
+    <li>Future games can be developed with improvement on graphics and objects to test reaction times.  
+      For example, the user could touch a car image when it appears and not to touch pedestrian.  Failure to react to the correct
+       object could be used to measure reaction ability and speed</li>
+   </ul>
+   <li>Partnership with Insurance companies and a reward system that could be investigated.  Driver could gain points and receive bonuses or improved insurance rates to encourage the use of this application. Insurance companies have used applications to encourage safe driving in this way in the past (Baker 2016)</li>
+  </ul>
+
+<br>
+
+
+
+
+
       <h2 id="tools">Tools & Technologies</h2>
       <p>The tools and technologies we would need to possess to develop the Drive Aware app on an iOS would be, primarily the <a href="https://developer.apple.com/xcode/features/"> XCode developmental tool</a>. This is where we would be able to write our code using the <a href="https://docs.swift.org/swift-book/"> Swift Programming Language (Swift 5.4)</a> and build our user interface (UI). We would require database development to be able to store the user’s details and data gathered. This could be done with <a href="https://nordicapis.com/what-is-the-difference-between-an-api-and-an-sdk/"> SDK (Software Development Kit) and API (Application Programming Interface)</a>. The SPC (software processing control) will allow us to input the user’s personal data and <a href="https://www.w3schools.com/whatis/whatis_cli.asp"> CLI (Command Line Interface) </a>allows the input of specific details. </p>
 <p>The <a href="https://apple.fandom.com/wiki/Graphical_user_interface"> GUI- graphical user interface</a> will allow the reaction time game to function and <a href="https://developer.apple.com/documentation/xcode/allowing-apps-and-websites-to-link-to-your-content"> URI- universal resource identifiers </a> can allow the app to call emergency services in a potential emergency. If Drive Aware were to be a native app, it would offer a better UX- user experience by having quicker navigation and enhanced security of the user’s data. Also being a <a href="https://www.webfx.com/blog/web-design/native-app-vs-mobile-web-app-comparison/"> native app</a>, this allows the camera to be accessed to then be able to monitor the driver’s visual cues with the forward-facing lens. </p>
@@ -216,6 +381,12 @@
       <h2 id="timeframe">Timeframe</h2>
       <h2 id="risks">Risks</h2>
       <h2 id="group">Group Processes & Communications</h2>
+      <p>For Assignment 2, we did have another team member who was unresponsive to not only Microsoft Teams communication but also to direct emails via Canvas.  This was addressed by making Anthony our Teacher and David our Tutor aware.  We also removed the member from Teams.
+        <br><br>The remaining 5 members of the DAT Team are very proactive and communicative.  This has made the coordination of both Assignment 2 and 3 projects successful.
+        <br><br>All members have notifications on for the Microsoft Teams group and therefore are very responsive to chat discussions, meeting invites and requests.
+        <br><br>As all team members have different responsibilities and commitments at different times of the day.  We have found that it is not always convenient to chat at the same time.  We have navigated this with all members putting in the effort to regularly check regularly the chats.
+        <br><br>Our team has agreed to twice weekly meetings so even if we have been busy with other commitments all team members have made the effort to attend in most cases.
+      </p>
 
     </div>
 
